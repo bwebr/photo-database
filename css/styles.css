@@ -1,5 +1,10 @@
 
 
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
 
 img {
   display: block;
