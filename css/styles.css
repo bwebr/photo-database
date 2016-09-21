@@ -5,14 +5,110 @@
   content: "";
   display: table;
 }
+.clearfix:after{
+  clear: both;
+}
+
+header {
+  background: #000;
+  height: auto;
+  font-size: 23px;
+}
+
+nav ul li {
+  float:left;
+}
+
+nav ul li a{
+  display: block;
+  color:#ccc;
+  padding: 20px;
+  text-decoration: none;
+}
+
+nav ul li a: hover {
+  background:url(../images/the-blue-line1.jpg) repeat-x;
+  color: yellow;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 0.3;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+}
+
+img, #buttons-wrapper {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  display: block;
+}
 
 img {
   display: block;
   width: 100%;
+  padding: 20px;
 }
 
-@media (min-width: 480px) { /* mobile-landscape */
+
+/* mobile phone landscape view */
+@media (min-width: 480px) {
   main {
     width: 440px;
     margin: 0 auto;
   }
+}
+
+ /* tablet-portrait */
+@media (min-width: 650px) {
+  main {
+    width: 610px;
+    margin: 0 auto;
+  }
+  article {
+    display: inline-block;
+  }
+}
+
+/* tablet-landscape/smaller laptops */
+@media (min-width: 940px) {
+  main {
+    width: 900px;
+  }
+}
+
+/* laptops/desktops */
+@media (min-width: 1220px) {
+  main {
+    width: 1180px;
+  }
+}
+
+footer {
+  background: #000;
+  height: auto;
+  font-size: 23px;
+}
+
+ul li {
+  float:right;
+}
+
+ul li a{
+  display: block;
+  color:#ccc;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background:url(../images/the-blue-line1.jpg) repeat-x;
+  color:yellow;
+}

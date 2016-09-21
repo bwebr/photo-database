@@ -9,10 +9,11 @@
 </head>
 <body>
   <header>
+    <article class="clearfix">
     <nav>
       <ul class="navlist">
         <li class="navlist-item">
-          <a class="navlink" href="#">Home</a>
+          <a class="navlink" href="index.html">Home</a>
         </li>
         <li class="navlist-item">
             <a class="navlink" href="archive.html">Archive</a>
@@ -30,28 +31,29 @@
             <a class="navlink" href="#">Presentation</a>
           </li>
             <!-- Add SearchBox float right -->
-        <li class="navlist-item">
+          <li class="navlist-item">
             <a class="navlink" href="#">Search Box</a>
           </li>
-      </ul>
-    </nav>
-  </header>
+        </ul>
+      </nav>
+    </header>
   <main>
+    <article class="clearfix">
     <div id="container">
-      <div class="start-image-random">
-        <img src="images/shardColourFilm.jpg" class="centered" alt="Shard Colour Film" />
-  				<div id="buttons-wrapper">
-      			<form>
-      				<input type="button" id="back" value="Back">
-              <input type="button" id="archive" value="Archive">
-      				<input type="button" id="forward" value="Forward">
-      			</form>
-    		</div>
-    </div>
+  		<img id="currentImage" src="images/berlinTeufelsBerg.jpg">
+  		<div id="buttons-wrapper">
+  			<form>
+  				<input type="button" class="btn" id="back" value="Back">
+          <input type="button" class="btn" id="archive" value="Archive">
+  				<input type="button" class="btn" id="forward" value="Forward">
+  			</form>
+  		</div>
+  	</div>
+
   </main>
   <footer>
+    <article class="clearfix">
     <ul class="footer-list">
-
       <li class="footer-item">
         <a class="footer-link" href="#">Twitter</a>
       </li>
@@ -61,13 +63,12 @@
         <li class="footer-item">
             <a class="footer-link" href="#">Email</a>
           </li>
-
     </ul>
   </footer>
 
 
 
-
-
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>
