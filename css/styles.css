@@ -10,7 +10,7 @@
 }
 
 header {
-  background: #000;
+  background: #010D1F;
   height: auto;
   font-size: 23px;
 }
@@ -46,16 +46,19 @@ nav ul li a: hover {
 
 img, #buttons-wrapper {
   margin: 0 auto;
-  width: 500px;
   text-align: center;
   display: block;
 }
 
 img {
   display: block;
-  width: 100%;
   padding: 20px;
-}
+    width: 70%;
+    }
+
+
+
+
 
 
 /* mobile phone landscape view */
@@ -92,7 +95,7 @@ img {
 }
 
 footer {
-  background: #000;
+  background: #010D1F;
   height: auto;
   font-size: 23px;
 }
@@ -103,7 +106,7 @@ ul li {
 
 ul li a{
   display: block;
-  color:#ccc;
+  color:white;
   padding: 20px;
   text-decoration: none;
 }
@@ -111,4 +114,19 @@ ul li a{
 ul li a:hover {
   background:url(../images/the-blue-line1.jpg) repeat-x;
   color:yellow;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
